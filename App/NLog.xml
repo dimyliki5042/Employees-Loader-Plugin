@@ -7224,6 +7224,11 @@
             </summary>
             <returns>Scope Duration Time</returns>
         </member>
+        <member name="T:NLog.ScopeContext.ScopeContextPropertiesCollapsed">
+            <summary>
+            Special bookmark that can restore original parent, after scopes has been collapsed
+            </summary>
+        </member>
         <member name="T:NLog.Filters.ConditionBasedFilter">
             <summary>
             Matches when the specified condition is met.
@@ -10339,6 +10344,41 @@
         <member name="F:NLog.Internal.RuntimeOS.MacOSX">
             <summary>
             Macintosh Mac OSX
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.ScopeContextAsyncState">
+            <summary>
+            Immutable state that combines ScopeContext MDLC + NDLC for <see cref="T:System.Threading.AsyncLocal`1"/>
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.IScopeContextAsyncState">
+            <summary>
+            Immutable state that combines ScopeContext MDLC + NDLC for <see cref="T:System.Threading.AsyncLocal`1"/>
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.IScopeContextPropertiesAsyncState">
+            <summary>
+            Immutable state for ScopeContext Mapped Context (MDLC)
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.ScopedContextNestedAsyncState`1">
+            <summary>
+            Immutable state for ScopeContext Nested State (NDLC)
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.ScopeContextPropertyAsyncState`1">
+            <summary>
+            Immutable state for ScopeContext Single Property (MDLC)
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.ScopeContextPropertiesAsyncState`1">
+            <summary>
+            Immutable state for ScopeContext Multiple Properties (MDLC)
+            </summary>
+        </member>
+        <member name="T:NLog.Internal.ScopeContextLegacyAsyncState">
+            <summary>
+            Immutable state for ScopeContext handling legacy MDLC + NDLC operations
             </summary>
         </member>
         <member name="P:NLog.Internal.SetupConfigurationLoggingRuleBuilder.LoggingRule">
